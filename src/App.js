@@ -3,13 +3,16 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 import { GithubHeader, Repo, NextPrevButton } from "./components/index";
 
-
 function App() {
   const [todayDate, setTodayDate] = useState("");
   const [repos, setRepos] = useState(null);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
 
+
+
+
+  
   // this function for set date of today
   function setDate() {
     const date = new Date();
